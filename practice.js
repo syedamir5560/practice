@@ -19,8 +19,10 @@ function fun() {
             <h4>Password : ${element.password}</h4>
             <address>Email : ${element.email}</address>
              </div>`
-                    
+            
              cont.insertAdjacentHTML('beforeend', newb)
+             btn.disabled="true"
+            
             });
         }
     }
