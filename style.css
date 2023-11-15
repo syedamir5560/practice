@@ -4,13 +4,17 @@
     box-sizing:border-box
 }
 
-
+body{
+    background-image: url(https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-position: center;
+background-size: cover;
+}
 
 
 .container{
 height: auto;
 width: 100vw;
-background-color: rgb(226, 235, 242) ;
+background-color: transparent ;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
@@ -26,6 +30,7 @@ flex-wrap: wrap;
     border-radius: 9px;
     line-height: 24px;
     text-align: center;
+    
 }
 
 .btn {
