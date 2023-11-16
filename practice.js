@@ -29,12 +29,25 @@ let cont = document.querySelector(".container")
 //     xhr.send()
 // }
 
+function fun(){
+    
+const fetchPromise = fetch("https://fakestoreapi.com/users");
+fetchPromise.then(response => {
+    return response.json()
+}).then((x) => {
+    console.log(x)
+    x.forEach((element, index) => {
+        let newb = `<div class='card'>
+                     <h2>Name : ${element.name.firstname}</h2>
+                     <h3>Phone : ${element.phone}</h3>
+                     <h4>Password : ${element.password}</h4>
+                     <address>Email : ${element.email}</address>
+                      </div>`
 
-fetch("https://fakestoreapi.com/users")
+        cont.insertAdjacentHTML('beforeend', newb)
+        
 
-    .then(Response => {
-        if (Response.status == 200) {
+    });
 
-            console.log(Response)
-        }
-    })
+})
+}
