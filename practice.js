@@ -29,22 +29,4 @@ let cont = document.querySelector(".container")
 //     xhr.send()
 // }
 
-async function fun() {
-    let p = await fetch('https://fakestoreapi.com/users')
-    let x = await p.json()
-
-    x.forEach((element, index) => {
-        let newb = `<div class='card'>
-                    <h2>Name : ${element.name.firstname}</h2>
-                    <h3>Phone : ${element.phone}</h3>
-                    <h4>Password : ${element.password}</h4>
-                    <address>Email : ${element.email}</address>
-                    <address>Email : ${element.email}</address>
-                     </div>`
-
-        cont.insertAdjacentHTML('beforeend', newb)
-
-    })
-}
-
-
+    
