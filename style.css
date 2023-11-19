@@ -13,8 +13,8 @@ body {
 
 .container {
   width: 100%;
-border: 2px solid blue;
-height: auto;
+  border: 2px solid blue;
+  height: auto;
 }
 
 .form-box {
@@ -29,13 +29,14 @@ height: auto;
 
 }
 
-.input-field{
+.input-field {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   cursor: pointer;
 }
-.form-box input{
+
+.form-box input {
   display: block;
   min-height: 25px;
   font-size: 15px;
@@ -44,33 +45,35 @@ height: auto;
   border-radius: 10px;
   border: 1px solid #ccc;
 }
-.form-box input[type='text']{
+
+.form-box input[type='text'] {
   padding-right: 25px;
 }
 
-#submit{
+#submit {
   margin-top: 30px;
-  background-color:lightsalmon;
-            cursor: pointer;
-            color: white;
-            font-weight: 900;
+  background-color: lightsalmon;
+  cursor: pointer;
+  color: white;
+  font-weight: 900;
 
 }
 
-.form-box h2{
+.form-box h2 {
   text-align: center;
   font-size: 30px;
   font-weight: 800;
 }
-.form-box label{
+
+.form-box label {
   font-size: 20px;
-  color:rgb(44, 44, 91);
+  color: rgb(44, 44, 91);
   cursor: pointer;
   font-weight: 900;
   letter-spacing: 2px;
 }
 
-.input-field span{
+.input-field span {
   display: none;
 }
 
@@ -83,20 +86,25 @@ height: auto;
   bottom: 10px;
   font-size: 25px;
 }
-.form-box .input-field.error input{
-  border:3px solid red;
+
+.form-box .input-field.error input {
+  border: 3px solid red;
 }
-.form-box .input-field.success input{
-  border:3px solid greenyellow;
+
+.form-box .input-field.success input {
+  border: 3px solid greenyellow;
 }
-.form-box .input-field.error .fa{
+
+.form-box .input-field.error .fa {
   color: red;
-bottom: 40px;
+  bottom: 40px;
 }
-.form-box .input-field.success .fa{
+
+.form-box .input-field.success .fa {
   color: greenyellow;
 }
-.input-field span{
+
+.input-field span {
   display: none;
   margin: 8px;
   font-weight: 900;
@@ -105,11 +113,13 @@ bottom: 40px;
   font-size: 15px;
   text-align: center;
 }
-.input-field.error span{
+
+.input-field.error span {
   color: red;
   display: block;
 }
-.input-field.success span{
+
+.input-field.success span {
   color: greenyellow;
   display: block;
 }

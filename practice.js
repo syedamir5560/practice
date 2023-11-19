@@ -7,5 +7,9 @@ document.getElementById('submit').addEventListener("click",(e)=>{
 
 let username = document.getElementById('username')
 
+function checkData(){
+    let usernameValue = username.value.trim()
 
+
+}
     
