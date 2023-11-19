@@ -69,3 +69,47 @@ height: auto;
   font-weight: 900;
   letter-spacing: 2px;
 }
+
+.input-field span{
+  display: none;
+}
+
+
+/* adding class for event */
+
+.form-box .fa {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  font-size: 25px;
+}
+.form-box .input-field.error input{
+  border:3px solid red;
+}
+.form-box .input-field.success input{
+  border:3px solid greenyellow;
+}
+.form-box .input-field.error .fa{
+  color: red;
+bottom: 40px;
+}
+.form-box .input-field.success .fa{
+  color: greenyellow;
+}
+.input-field span{
+  display: none;
+  margin: 8px;
+  font-weight: 900;
+  font-style: italic;
+  /* border: 2px solid red; */
+  font-size: 15px;
+  text-align: center;
+}
+.input-field.error span{
+  color: red;
+  display: block;
+}
+.input-field.success span{
+  color: greenyellow;
+  display: block;
+}
