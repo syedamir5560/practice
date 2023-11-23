@@ -26,7 +26,7 @@ function validateForm() {
     } else if (isValidEmail(emailInput.value) == false) {
         setError(emailInput, 'Invalid Email', 'p2')
     } else {
-        setSuccess(emailInput)
+        setSuccess(emailInput)  
     }
 
     //Password
