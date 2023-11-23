@@ -6,10 +6,7 @@ let confirmpasswordInput = document.querySelector('#confirm-password')
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-    // console.log(565);
     validateForm()
-
-
 })
 
 function validateForm() {
@@ -22,6 +19,7 @@ function validateForm() {
     } else {
         setSuccess(usernameInput)
     }
+
     // Email
     if (emailInput.value.trim() == '') {
         setError(emailInput, 'email Cannot Be Blank', 'p2')
