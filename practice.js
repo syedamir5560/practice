@@ -8,6 +8,8 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     // console.log(565);
     validateForm()
+
+
 })
 
 function validateForm() {
@@ -26,7 +28,8 @@ function validateForm() {
     } else if (isValidEmail(emailInput.value) == false) {
         setError(emailInput, 'Invalid Email', 'p2')
     } else {
-        setSuccess(emailInput)  
+        setSuccess(emailInput)
+
     }
 
     //Password
@@ -40,7 +43,19 @@ function validateForm() {
     else {
         setSuccess(passwordInput)
     }
+
+    //conferm-password
+    if (confirmpasswordInput.value.trim() == '') {
+        setError(confirmpasswordInput, 'Password Cannot Be Blank', 'p4')
+    } else if (confirmpasswordInput.value.localeCompare(passwordInput.value, { sensitivity: "base" })) {
+        setError(confirmpasswordInput, 'Password does not match', 'p4')
+
+    }
+    else {
+        setSuccess(confirmpasswordInput)
+    }
 }
+
 
 function setError(element, msg, ptag) {
     let parent = element.parentElement;
