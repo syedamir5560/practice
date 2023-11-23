@@ -59,20 +59,12 @@ function validateForm() {
  
     } else if (confirmpasswordInput.value.localeCompare(passwordInput.value, { sensitivity: "base" })) {
         setError(confirmpasswordInput, 'Password does not match', 'p4')
- 
-
     }
     else {
         setSuccess(confirmpasswordInput)
       
     }
-
-
-
-    
 }
-
-
 
 function setError(element, msg, ptag) {
     let parent = element.parentElement;
