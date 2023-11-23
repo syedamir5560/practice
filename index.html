@@ -4,51 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <form action="">
-            <div class="form-box">
-                <h2>Fill the form</h2>
-                <div class="input-field">
-                    <label for="username">User name:</label>
-                    <input type="text" name="" id="username" placeholder="Username">
-                    <i class="fa "></i>
+    <form id="create-account-form">
+        <div class="title">
+            <h2>Register</h2>
+        </div>
+        <!-- username -->
+        <div class="input-group ">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="ENTER Your name" id="username" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p class="p1">Error Message</p>
+        </div>
+        <!-- email -->
+        <div class="input-group ">
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="ENTER Your eMAIL aDDRESS" id="email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p class="p2">Error Message</p>
+        </div>
+        <!-- password -->
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="text" name="password" placeholder="ENTER Your Password" id="password" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p class="p3">Error Message</p>
+        </div>
+        <!-- connfim password -->
+        <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="text" name="confirmpasswordpassword" placeholder="ENTER Your Password Again"
+                id="confirm-password" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p class="p4">Error Message</p>
+        </div>
 
-                    <span></span>
-                </div>
+        <!-- <input type="submit" value="REGISTER"> -->
+        <button type="submit" class="btn">REGISTER</button>
+    </form>
 
-                <div class="input-field">
-                    <label for="Email">Email:</label>
-                    <input type="text" name="" id="email" placeholder="Enter Email">
-                    <i class="fa "></i>
-
-                    <span></span>
-                </div>
-
-                <div class="input-field">
-                    <label for="Password">Password:</label>
-                    <input type="text" name="" id="password1" placeholder="Enter password">
-                    <i class="fa "></i>
-
-                    <span></span>
-                </div>
-
-                <div class="input-field">
-                    <label for="Confirm password">Confirm password:</label>
-                    <input type="text" name="" id="password2" placeholder="Conferm password">
-                    <i class="fa "></i>
-
-                    <span></span>
-                </div>
-                <input type="submit" value="REGISTER" id="submit">
-            </div>
-        </form>
-    </div>
     <script src="practice.js"></script>
 </body>
 
