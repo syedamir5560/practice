@@ -24,7 +24,7 @@ function debounce(call, d) {
     }
 }
 
-const mainF = debounce(getData, 1500);
+const mainF = debounce(getData, 1000);
 
 function getData() {
 
