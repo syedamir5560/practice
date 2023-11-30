@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color:rgba(230, 187, 187, 0.484);
 }
 
 #create-account-form {
@@ -17,6 +18,8 @@ body {
   text-transform: uppercase;
   height: 600px;
   width: 400px;
+  background-color:bisque;
+  border-radius: 25px;
 }
 
 .title {
@@ -64,6 +67,7 @@ body {
 .error .fa-exclamation-circle {
   color: red;
   visibility: visible;
+  top: 33%;
 }
 
 .input-group p {
@@ -83,4 +87,13 @@ body {
   width: 100%;
   padding: 10px 0;
   font-size: 20px;
+  border-radius: 25px;
+  border: 1px solid blue;
+ transition: all ease 0.5s;
+  cursor: pointer;
+  background-color: skyblue;
+}
+
+.btn:hover{
+  box-shadow: 10px 10px 20px black;
 }
