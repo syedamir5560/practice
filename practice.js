@@ -1,12 +1,9 @@
-let num=1234
-
-let numstr=num.toString();
-let sum=1 ;
-for(let digit of numstr){
-    
-    sum *= parseInt(digit);
-}
-console.log("Sum Of Digit is "+sum);
+function squaredDigits(num) {
+    let digits = num.toString().split('');
+    let squared = digits.map(digit => digit = digit*digit);
+    return parseInt(squared.join(''));
+   }
 
 
 
+   console.log(squaredDigits(123)); // Output: 149
