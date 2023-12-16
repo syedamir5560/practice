@@ -18,9 +18,34 @@
     font-weight:800;
     letter-spacing: 2px;
     text-transform: uppercase; 
-    line-height: 40px;
-    background-color: cadetblue;
+    line-height: 55px;
+    background-color: #ffc61a;
+  
   }
+  .nav-link{
+    color: black !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+  }
+
+  .navbar-lists .nav-link.active{
+    color: white !important;
+   
+  }
+
+  .nav-link:hover{
+    background-color: #e3dfd2;
+  }
+  .nav-item .active:hover{
+    color: black !important;
+  }
+
+  .nav-link .fa-chevron-right{
+    color: #ffc61a;
+    font-size: 20px !important;
+  }
+
+  
 
 
 }
