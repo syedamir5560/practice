@@ -4,8 +4,29 @@
   box-sizing: border-box;
 }
 
+.container{
+  border-bottom: 5px solid orange;
+}
+
+@media (max-width:1199px) {
+  .container{
+    border-bottom: none;
+  }
+
+  .navbar-lists .nav-link{
+    font-size: 50px;
+    font-weight:800;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    line-height: 40px;
+    background-color: cadetblue;
+  }
+
+
+}
 .navbar{
   background-color: rgba(0, 0, 0, 0.796);
+  height: 70px;
 }
 
 .nav-wrapper .navbar .navbar-brand img{
@@ -17,22 +38,23 @@
   line-height: 50px;
 }
 .navbar-lists .nav-link{
-  font-size: 15px;
-  font-weight:600;
+  font-size: 12px;
+  font-weight:700;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: uppercase; 
 }
 .navbar-lists .nav-link:nth-child(4){
   margin-bottom: 4px;
 }
 
 .navbar-lists .nav-link.active{
-  color: orange;
+  color: #ffc61a;
 }
 
 
 .navbar-lists .nav-link:hover{
-  color: orange;
+  color: #ffc61a;
+
 }
 
 .nav-item a{
@@ -41,5 +63,16 @@
 .fa-solid{
   font-size: 30px;
   font-weight: 700;
+  color: white;
 }
+
+.fa-chevron-right{
+  font-size:10px;
+  color: white;
+}
+
+.nav-link:hover .fa-chevron-right{
+  color: #ffc61a;
+}
+
 
