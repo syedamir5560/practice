@@ -1,8 +1,7 @@
-const arr = ['eng','urdu','marathi','haha','2'];
+let Arr = [1,2,3,4,5,6,7,8]
 
-console.log(arr)
-let arr1 = arr.splite(' ')
+let sum = Arr.reduce((result , item,index,arr)=>{
+    return result *  index;
+})
 
-
-
-console.log(arr1)
+console.log(sum)
