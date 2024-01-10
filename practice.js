@@ -1,7 +1,5 @@
-let Arr = [1,2,3,4,5,6,7,8]
+let str = " aamir ali i am good ";
 
-let sum = Arr.reduce((result , item,index,arr)=>{
-    return result *  index;
-})
+console.log(str.length)
 
-console.log(sum)
+console.log(str.padStart( 4 ,'5' ))
