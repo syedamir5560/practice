@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-padding: 10px;
+    padding: 10px;
 }
 
 h1 {
@@ -34,7 +34,7 @@ button:hover {
 
 #output {
     /* margin-top: 300px; */
-    transform: translate(5%,60%);
+    transform: translate(5%, 60%);
     font-weight: bold;
     font-size: 20px;
     width: 600px;
@@ -46,25 +46,25 @@ button:hover {
     color: #ff0000;
 }
 
-.maindiv{
+.maindiv {
     border: 6px solid black;
     /* margin-bottom: 2rem; */
     border-radius: 20px;
     background-color: #8abaef;
-width: 100%;
+    width: 100%;
 
 }
 
-input{
+input {
     height: 30px;
 }
 
-label{
+label {
     font-size: 17px;
     font-weight: 600;
 }
 
-button{
+button {
     margin-top: 30px;
 }
 
@@ -80,8 +80,9 @@ button{
     -moz-opacity: 0.8;
     opacity: .80;
     filter: alpha(opacity=80);
-  }
-  .white_content {
+}
+
+.white_content {
     display: none;
     position: absolute;
     top: 25%;
@@ -93,5 +94,4 @@ button{
     background-color: white;
     z-index: 1002;
     overflow: auto;
-  }
-
+}
