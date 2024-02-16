@@ -4,53 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha256-hAAeYYay49db5vtVoWSPRrR/UklHdhxgPuFrY4k46L4=" crossorigin="anonymous" />
-    <title>Document</title>
-    <style>
-        div{
-            background-color: rgb(21, 35, 35);
-            width: 300px;
-            height: 300px;
-           
-           
-        }
-        container{
-            display: flex;
-            align-items: center;
-            gap:5px;
-            flex-wrap:wrap ;
-        }
-
-        body{
-            width: 100%;
-            height: 100%;
-        }
-
-    </style>
+    <title>Facility Booking System</title>
 </head>
 
-
 <body>
+    <div class="maindiv">
+        <h1 style="font-weight: 800; color: black;">Apartment Facilities Booking System</h1>
+        <form id="bookingForm"
+            style="border: 4px solid blueviolet; padding: 50px 50px 50px 50px; display: flex ; flex-direction: column ; margin-bottom: 50px; background-color: azure; border-radius: 20px;">
 
-    <container>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-    </container>
+            <label for="text">Name:</label>
+            <input type="text" id="name" required placeholder="Enter your Name..">
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-<script src="practice.js"></script>
+            <label for="number">Apartment Number:</label>
+            <input type="number" id="appt" required placeholder="Enter your Appt. Number ..">
+
+            <label for="facility">Facilities:</label>
+
+            <select id="facility">
+                <option value="Clubhouse">Clubhouse</option>
+                <option value="Tennis Court">Tennis Court</option>
+
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" value="2024-01-01">
+
+            <label for="startTime">Start Time:</label>
+            <input type="time" id="startTime" required>
+
+            <label for="endTime">End Time:</label>
+            <input type="time" id="endTime" required>
+
+            <button type="submit" style="font-size: 20px; font-weight: 600;"
+                onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">Book
+                Now !!</button>
+        </form>
+    </div>
+
+    <div id="fade" class="black_overlay" ></div>
+   
+    <div id="light" class="white_content"><a href="javascript:void(0)"
+            onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+                <div id="output">
+
+                </div>
+    </div>
+   
+
+
+
+    <script src="practice.js"></script>
 </body>
 
 </html>
