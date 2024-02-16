@@ -82,7 +82,6 @@ bookingForm.addEventListener('submit', function (event) {
 
     if (document.getElementById("endTime").value <= document.getElementById("startTime").value) {
         alert("End time must not be equal to and less then  Start Time")
-
     }
 
     else {
